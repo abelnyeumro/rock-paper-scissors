@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rps-js.js"></script>
+    <script src="rps-js.js" defer></script>
+    <style>
+        div.options{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        div.options button{
+            margin-left: 10px;
+            font-size: large;
+            padding: 40px;
+            width: auto;
+            transition: width 2s;
+        }
+        div.resultDiv{
+            text-align:  center;
+            font-size: large;
+            padding: 22px;
+            color: #FFFFFF;
+            background: #FFFFFF;
+            text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+        }
+        div.options button#rock:hover{
+            background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fr%2Fw2560-q80%2Fupload%2F0d%2F16%2Fc4%2Fshutterstock-221981290.jpg&f=1&nofb=1&ipt=b685fc34ad7a9728feac17f95e029d81749ee0c01f80992b03b36ae33643303a&ipo=images") ;
+            color: white;
+            width: 100%;
+        }
+        div.options button#paper:hover{
+            background-image:url("https://hercheng.com/wp-content/uploads/2020/02/1.jpg") ;
+            color: white;
+            width: 100%;
+        }
+        div.options button#scissors:hover{
+            background-image:url("https://i0.wp.com/blog.treasurie.com/wp-content/uploads/types-of-sewing-scissors-0.jpg") ;
+            color: white;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="options">
+        <button id="rock"></button>
+        <button id="paper"></button>
+        <button id="scissors"></button>
+    </div>
+        <div class="resultDiv"></div>
 </body>
 </html>
